@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", serif
+}
+.serachContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.search-input{
+    width: 0px;
+    font-size: 1.3rem;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.7s ease;
+}
+.search-input:hover{
+    border: blueviolet solid 2px;
+}
+.searchBtn{
+    /* width: 60px;
+    height: 60px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.searchBtn:hover{
+    background-color: blueviolet;
+    outline: 1px solid black;
+}
+.searchIcon{
+    font-size: 2rem;
+}
+
+.serachContainer.active .search-input{
+    width: 400px;
+    opacity: 1;
+    visibility: visible;
+}
